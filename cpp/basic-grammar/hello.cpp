@@ -35,5 +35,10 @@ int main() {
 	t.name = " hello ";
 	t.score = 99;
 	cout << t.id << " " << t.name << " " << t.score << endl;
+	int a = 10;
+	int& ya = a;
+	cout << ya << endl;
+	ya -= 1;
+	cout << a << " " << ya << endl;
 	return 0;
 }
