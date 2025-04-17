@@ -1,6 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
+class A {
+	public:
+	int id;
+	string name;
+	int score;
+};
 int main() {
 	cout << "hello world!" << endl; //输出hello world
 	bool flag = 1;
@@ -13,6 +20,7 @@ int main() {
 	string str = "hello, \
 		      world";
 	cout << str << endl;
+	cout << str.size() << endl;
 	vector<int> q;
 	for(int i = 1; i <= 10; i++) {
 		q.push_back(i);
@@ -21,5 +29,11 @@ int main() {
 	for(auto i = q.begin(); i != q.end(); i++) {
 		cout << *i << " ";
 	}
+	cout << q.size() << endl;
+	A t;
+	t.id = 1;
+	t.name = " hello ";
+	t.score = 99;
+	cout << t.id << " " << t.name << " " << t.score << endl;
 	return 0;
 }
